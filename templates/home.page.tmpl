@@ -1,0 +1,18 @@
+{{template "base" .}}
+
+{{define "content"}}
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>This is the Home Page</h1>
+            <p>This is some text poop</p>
+            <p>This came from the template: {{index .StringMap "test"}}</p>
+            <p>This came from the template2: {{index .StringMap "Home"}}</p>
+        </div>
+    </div>
+    
+</div>
+
+{{end}}
+    
