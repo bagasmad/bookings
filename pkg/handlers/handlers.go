@@ -38,6 +38,7 @@ func (m *Repository) Home(w http.ResponseWriter, r *http.Request) {
 
 	stringMap := make(map[string]string)
 	stringMap["Home"] = "Hello, again this is home prett"
+	stringMap["test"] = "Hello, again"
 
 	render.RenderTemplate(w, "home.page.tmpl", &models.TemplateData{StringMap: stringMap})
 	//do business logic here, everytime the appropriate handler is called, we will return the appropriate template
